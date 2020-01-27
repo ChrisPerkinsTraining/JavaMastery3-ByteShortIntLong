@@ -4,52 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Int Width = 32 bits
+        byte myByte = 18;
 
-        int myValue = 10000;
+        short myShort = 27365;
 
-        int myMinIntValue = Integer.MIN_VALUE;
-        int myMaxIntValue = Integer.MAX_VALUE;
+        int myInt = 2809238;
 
-        System.out.println("Integer Minimum Value = " + myMinIntValue );
-        System.out.println("Integer Maximum Value = " + myMaxIntValue );
+        long myLong = ((myByte + myShort + myInt) * 10L) + 50000L;
 
-        System.out.println("Busted Max Value = " + (myMaxIntValue + 1));
-        System.out.println("Busted Max Value = " + (myMinIntValue - 1));
+        short myDerivedShort = (short) (((myByte + myShort + myInt) * 10) + 50000);
 
-        int myMaxIntTest = 2_147_483_647;
-
-        // Bytes Width = 8 bits
-
-        byte myMinByteValue = Byte.MIN_VALUE;
-        byte myMaxByteValue = Byte.MAX_VALUE;
-
-        System.out.println("Byte Minimum Value = " + myMinByteValue);
-        System.out.println("Byte Maximum Value = " + myMaxByteValue);
-
-        // Shorts Width = 8 bits
-
-        short myMinShortValue = Short.MIN_VALUE;
-        short myMaxShortValue = Short.MAX_VALUE;
-
-        System.out.println("Short Minimum Value = " + myMinShortValue);
-        System.out.println("Short Maximum Value = " + myMaxShortValue);
-
-        //Long Width =
-
-        long myLongValue = 100L;
-
-        long myMinLongValue = Long.MIN_VALUE;
-        long myMaxLongValue = Long.MAX_VALUE;
-
-        System.out.println("Long Minimum Value = " + myMinLongValue);
-        System.out.println("Long Maximum Value = " + myMaxLongValue);
-
-        long bigLongLitteralValue = 2_147_483_647_234L;
-
-        System.out.println(bigLongLitteralValue);
-
-        short bigShortLitteralValue = 32767;
-
+        System.out.println("My Long: " + myLong);
     }
 }
