@@ -51,5 +51,11 @@ public class Main {
 
         short bigShortLitteralValue = 32767;
 
+        int myTotal = (myMinIntValue / 2);
+
+        byte myNewByteValue = (byte) (myMinByteValue / 2);
+
+        short myNewShortValue = (short) (myMinShortValue / 2);
+
     }
 }
